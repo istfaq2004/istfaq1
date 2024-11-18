@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html>
+
+<head><title>Working with Animation</title>
+
+</head>
+
+<style>
+
+@keyframes runbanner
+
+{
+
+10%{left:0%;}
+
+20%{left:-19%;}
+
+30%{left:-19%;}
+
+40%{left:-38%;}
+
+50%{left:-38%;}
+
+60%{left:-57%;}
+
+70%{left:-57%;}
+
+80%{left:-77%;}
+
+90%{left:-77%;}
+
+}
+
+body{overflow:hidden;}
+
+#myheader { width:530%;
+
+height:400px;
+
+background:ed;
+
+}
+
+.bannerpic
+
+{
+
+position:relative;
+
+margin-left:-1px;
+
+width:19%;
+
+height:400px;
+
+left:0px;
+
+font-size:50px;
+
+color:black;
+
+float:left;
+
+margin-top:120px;
+
+text-align:center;
+
+animation:runbanner 12s infinite alternate;
+
+}
+
+.bannerpic a:visited{color:green;}
+
+#mask
+
+{
+
+width:50%;
+
+height:300px;
+
+background:cyan;
+
+box-shadow:10px 10px 10px gray;
+
+margin:auto;
+
+overflow:hidden;
+
+}
+
+</style>
+
+<body>
+
+<div id="mask">
+
+<div id="myheader">
+
+<a href="https://www.amazon.com/"><div class = "bannerpic" >Festival Sale On Amazon</div></a>
+
+<a href="https://www.royalenfield.com/"><div class = "bannerpic" >Royal Enfield</div></a>
+
+<a href="https://www.instagram.com/arenadelhi/"><div class = "bannerpic" >Visit Arena GTB For VFX, Graphic</div></a>
+
+<a href="https://www.isro.gov.in/"><div class = "bannerpic" >Isro - Chandrayan 3</div></a>
+
+<a href="https://istfaq2004.000webhostapp.com/"><div class = "bannerpic" >Istfaq web </div></a>
+
+</div>
+
+</div>
+
+</body>
+
+
+</html>

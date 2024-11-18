@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call</title>
+</head>
+<body>
+    <h1 id = "mes" style="transition:0.50s;padding:20px;width:40%;background:black">50% OFF ON CARDS</h1>
+    <script>
+
+window.document.body.style.backgroundImage = "url('images/jv1.jpg') ";
+        // Set Interval: To call a function in loop
+        var a = document.getElementById("mes")
+        var r,g,b,c
+        function show()
+    
+        {
+        r = Math.round(Math.random()*100)
+        g = Math.round(Math.random()*200)
+        b= Math.round(Math.random()*300)  
+        c = "rgb("+r+","+g+", "+b+")"
+        //a.innerHTML = c
+        //document.body.style.background= c
+        a.style.color= c
+        a.style.boxShadow= "10px 10px 10px "
+    }
+        var i = setInterval("show()",200)
+        </script>
+</body>
+</html>

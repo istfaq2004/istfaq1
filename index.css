@@ -1,0 +1,57 @@
+body {
+    background-image: url(images/bg7.jpg);
+     background-size:cover;
+     margin: 0;
+    padding: 0;
+    display:block;
+    
+  }
+
+  /* Body Styles */
+body {
+  background-image: url(images/bg7.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+
+  p {
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  
+   
+  a {
+text-decoration: none; /* Remove underline from links */
+color: green; /* Set default link color to black */
+display: inline-block;
+padding: 10px 5px;
+border-radius: 30px;
+font-family: Arial, sans-serif;
+font-size: 1.2rem;
+}
+
+a:hover {
+background-color:orange; /* Black background on hover */
+color: white; /* Text color change on hover */
+border: 0px solid teal; /* Black border on hover */
+}
+
+
+  

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /* Creating tag by JS */
+
+        window.document.bgColor="black"
+        var m
+        var mypic = document.createElement("img")
+        document.body.appendChild(mypic)
+        mypic.src="images/pc1.jpg"
+
+
+
+
+        mypic.style="transition:0.50s;margin:50px;border-radius:30px;cursor:pointer;"
+        mypic.style.width="30%"
+        mypic.style.boxShadow="10px 10px 10px gray"
+        mypic.onclick= function()
+        {
+            mypic.style.transform="scale(1.50) rotate(360deg)"
+        }
+        mypic.onmouseout = function()
+        {
+            mypic.style.transform="scale(1)"
+            mypic.style.borderRadius="0px"
+            document.body.removeChild(m)
+        }
+        mypic.onmouseover = function()
+{
+     mypic.style.transform="scale(1.50) rotate(360deg)"
+    mypic.style.borderRadius="150px"
+    mypic.style.height="350px"
+    m = document.createElement("div")
+    document.body.appendChild(m)
+    m.style="color:white;border-radius:20px;text-align:center;font-size:40px;position:absolute;background:black;top:440px;left:100px;width:200px;height:50px;boxshadow:10px 10px 10px gray"
+    m.innerHTML="Elephant"
+}
+        document.title="ready"
+
+    </script>
+</body>
+</html>

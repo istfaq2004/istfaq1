@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html>
+<head><title>Working With Animation</title>
+</head>
+<style>
+ body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;Remove default body margin 
+        background-color:black; Set a background color for the page 
+        background-image: url(images/wall2.jpg);Add your background image URL here
+        background-size: cover;
+    }
+
+
+//body{overflow:hidden;}
+@keyframes runbanner
+{
+10%{left:0%;}
+20%{left:-19%;}
+30%{left:-19%;}
+40%{left:-38%;}
+50%{left:-38%;}
+60%{left:-57%;}
+70%{left:-57%;}
+80%{left:-77%;}
+100%{left:-77%;}
+}
+
+
+#myheader{
+width:530%;
+height:200px;
+background:red;
+}
+
+
+
+.bannerpic
+{
+margin-left:-3px;
+width:19%;
+height:200px;
+position:relative;
+left:0px;
+animation:runbanner 12s infinite alternate;
+}
+
+
+#mask
+{
+width:30%;
+height:200px;
+background:green;
+margin:auto;
+overflow:hidden;
+}
+
+
+
+
+
+</style>
+<body>
+<div id="mask">
+
+<div id="myheader">
+
+<li><a href="www.instagram.com">INSTAGRAM</a></li>
+
+<li><a href="www.facebook.com">FACEBOOK</a></li>
+
+<li><a href="www.youtube.com">YOUTUBE</a></li>
+
+<li><a href="www.nascafe.com">NASCAFE</a></li>
+
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

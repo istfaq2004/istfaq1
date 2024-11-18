@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.pic
+{
+width: 500px;
+height: 500px;
+margin:20px;
+box-shadow: 10px 10px 10px gray;
+cursor: pointer;
+}
+.mystyle
+    {
+        margin:60px;
+        transition:0.50s;
+        transform:scale(1.2)  rotate(360deg) skewY(2deg);
+    }
+
+
+</style>
+<body  style="background-color: black;">
+    <H1 style='font-size:30px;color: rgb(138, 250, 198)'>Animals</H1>
+   <center>  <img id="mypic" src="images/pc2 (1).jpg" class="pic"> </center>
+
+    <script>
+       window.document.bgColor="#1D2018"
+        var p = document.getElementById("mypic")
+
+var n = 1
+
+p.onclick = function()
+
+{
+if(n<8)
+{
+    n++
+}
+else
+{
+    n=1
+}
+
+p.src = "images/pc2 ("+n+").jpg"
+p.classList.add("mystyle")
+}
+
+p.onmousemove = function()
+{
+    p.classList.remove("mystyle")
+}
+document.title="no error"
+
+
+        document.title="ready"
+
+    </script>
+</body>
+</html>

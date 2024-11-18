@@ -1,0 +1,100 @@
+
+
+
+<!doctype html>
+<html>
+<head><title>div</title>
+</head>
+
+<style>
+@keyframes ani1
+{
+from{transform:rotateY(360deg);}
+to{transform:rotateY(0deg) ;}
+}
+
+@keyframes ani2
+{
+from{transform:rotateY(360deg) ;}
+to{transform:rotateY(0deg);}
+}
+
+
+
+
+
+
+#box{
+width:500px;
+height:400px;
+background:black;
+margin:auto;
+margin-top:100px;
+perspective:230px;
+}
+
+#one{
+width:200px;
+height:250px;
+background:red;
+text-align:center;
+color:black;
+position:relative;
+left:150px;
+top:50px;
+//backface-visibility: hidden;
+animation-fill-mode: forwards;
+animation:ani2 5s linear infinite;
+background-image:url(images/delhi.jpg);
+background-size:cover;
+
+
+}
+
+
+#two
+{
+width:200px;
+height:250px;
+background:yellow;
+text-align:center;
+color:black;
+position:relative;
+left:150px;
+top:-200px;
+backface-visibility: hidden;
+animation-fill-mode: forwards;
+animation:ani1 5s linear infinite;
+background-image:url(images/delhi2.jpg);
+background-size:cover;
+}
+
+
+
+</style>
+<body style="background-image: url(images/bg2.jpg)";>
+
+<div id="box">
+
+<div id="one"> </div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

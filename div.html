@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .headstyle
+    {
+        width:100%;
+        box-shadow: 5px 5px 5px #000000;
+        color:rgb(160, 248, 186);
+        transition:1s;
+        cursor:pointer;
+
+    }
+
+    .datastyle
+    {
+        width:70%;
+        height:0px;
+        box-shadow: 5px 5px 5px #ffffd5;
+        color:rgb(0, 0, 0);
+        transition:3.0s;
+        font-size:x-large;
+        border:1px solid black;
+        text-align: justify;
+        overflow: hidden;
+        padding:0px;
+
+
+    }
+
+    .show
+    {
+        overflow:visible;
+        height:auto;
+        background:#f6f5c4;
+        opacity: 0.80;
+        padding:70px;
+        text-align:justify;
+        border-radius:100px;
+
+    }
+
+</style>
+
+<body>
+    <h1 id="heading1" style="color:#fafc9d;font-size: 35px;"> RED FORT HISTORY </h1>
+    <p id="about">
+        <span id="closebutton" style ="cursor:pointer;padding:5px;margin-left:95%;width:100%;background:black;text-align:right;color:white;font-size:20px;border-radius: 15px;">Close</span>
+
+    </br>
+    The Red Fort was built by none other than the Mughal Emperor Shah Jahan to serve as the palace fort for his capital Shahjahanabad. He commissioned the construction of the fort by the River Yamuna when he decided to shift his capital to Delhi from Agra. The construction, which started in 1638, took over 8 years to complete. The structure was originally named Qila-i-Mubarak, which means ‘the Blessed Fort’. During its history of over three centuries, the fort saw many occupants, including Aurangzeb, Jahandar Shah, Muhammad Shah, and Bahadur Shah II, among others.
+
+    The Red Fort underwent massive destruction in 1739 when the Persian ruler Nadir Shan invaded the city and plundered the fort of many valuable artifacts, including the Peacock Throne. Later, during the 1857 Revolt against the British, the marble structures of the fort were also destroyed.
+    <br/>
+    <br/> 
+    <br/>
+  <b> Red Fort Architecture</b>
+The fort, which is spread over 255 acres, features a mix of architectural styles such as Islamic, Hindi, Timurid, and Persian. Its massive, 2.5-km-long enclosing walls are made of red sandstone and that’s where the monument got its name from. A few parts of the fort are also made of red stone while the remaining structure is built using marble. The structure, which is in the shape of an irregular octagon, incorporates elements of garden design and also features turrets, bastions, pavilions, two gates, and several other sections.
+    </p>
+
+    <script>
+        document.bgColor ="aqua"
+        window.document.body.style.backgroundImage = "url('images/hist.jpg')";
+
+        var a = document.getElementById("heading1")
+        var b = document.getElementById("about")
+        var c = document.getElementById("closebutton")
+
+        c.onclick = function()
+        {
+            b.classList.remove("show")
+
+        }
+
+        a.onmouseover = function()
+        {
+            a.classList.add("headstyle")
+            //b.classList.remove("show")
+        }
+
+        a.onmouseout = function()
+        {
+            a.classList.remove("headstyle")
+            //b.classList.remove("show")
+
+        }
+
+        b.classList.add("datastyle")
+
+        a.onclick = function()
+        {
+            b.classList.add("show")
+
+        }
+
+    </script>
+    
+</body>
+</html>

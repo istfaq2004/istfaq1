@@ -1,0 +1,244 @@
+
+<!doctype>
+
+<html>
+
+<head>      <title>  Clock animation     </title>
+
+
+
+<h1 class="heading">  Wall Clock using KEYFRAMES </h1> 
+
+
+</head>
+
+
+
+
+<style>
+
+
+.heading
+{
+
+color:white;
+background:#DBD3FA;
+font-size:60px;
+text-align:center;
+
+}
+
+
+
+@keyframes rotateAnimation {
+  from{
+    transform-origin: top left;
+    transform: rotate(0deg);
+  }
+  to {
+    transform-origin: top left;
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.main
+{
+
+height:100vh;
+width:100%;
+background:#D3FAD5;
+
+
+}
+
+
+
+
+
+.clock
+
+{
+	position:relative;
+	margin:auto;
+	height:350px;
+	width:350px;
+	background:#A787D3;
+	border-radius:50%;
+	border:6px #3d3d3d inset;
+	box-shadow:8px 10px 10px grey;
+
+
+}
+
+
+.dot
+
+{
+	position:relative;
+	margin:auto;
+	height:30px;
+	width:30px;
+	background:white;
+	border-radius:50%;
+	margin-top:155px;
+	z-index:5;
+	
+	
+	
+}
+
+
+
+.bar1
+{
+
+
+height:115px;
+width:10px;
+background:#36e3fe;
+margin:auto;
+margin-top:-10px;
+border-radius:6px;
+
+
+}
+
+
+.bar2
+{
+
+position:relative;
+height:130px;
+width:8px;
+border-radius:4px;
+background:#3d3d3d;
+margin:auto;
+margin-top:-210px;
+right:55px;
+rotate:300deg ;
+
+
+}
+
+
+
+.bar3
+{
+
+position:relative;
+height:145px;
+width:4px;
+background:white;
+margin:auto;
+margin-top:-40px;
+animation: rotateAnimation 20s linear infinite;
+ 
+
+}
+
+
+.no1
+{
+
+position:relative;
+color:white;
+font-size:2em;
+text-align:center;
+top:-90%;
+
+}
+
+
+.no2
+{
+
+position:relative;
+color:white;
+font-size:2em;
+text-align:center;
+float:right;
+top:-55%;
+right:10px;
+}
+
+
+
+
+.no3
+{
+
+position:relative;
+color:white;
+font-size:2em;
+text-align:center;
+top:-12%;
+
+}
+
+
+
+
+.no4
+{
+
+position:relative;
+color:white;
+font-size:2em;
+text-align:center;
+float:left;
+top:-65%;
+left:10px;
+
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+<body bgcolor="#D3FAD5">
+
+<div class="main">
+
+
+    <div class="clock">
+
+	<div class="dot"></div>
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+
+
+
+<div class="no1">XII</div>
+<div class="no2">III</div>
+<div class="no3">VI</div>
+<div class="no4">IX</div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+</body>
+
+
+
+
+
+</html>

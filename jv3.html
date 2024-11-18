@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #banner
+    {
+        position: relative;
+        transform: perspective(400px);
+        width:900px;
+        height:500px;
+
+    }
+
+    .pic
+    {
+        width:60%;
+        height:600px;
+        display:block;
+        position:absolute;
+        left: 400px;
+        top:10px;
+        transition:2s;
+        box-shadow:10px 10px 10px gray;
+    }
+
+
+          
+</style>
+<body onload="show()">
+    <div id="banner">
+
+    <img id="p1" src="images/1.jpg" class ="pic">
+    <img id="p2" src="images/2.jpg" class ="pic">
+    <img id="p3" src="images/3.jpg" class ="pic">
+    <img id="p4" src="images/4.jpg" class ="pic">
+    <img id="p5" src="images/5.jpg" class ="pic">
+    <img id="p6" src="images/6.jpg" class ="pic">
+    <img id="p7" src="images/7.jpg" class ="pic">
+    <img id="p8" src="images/8.jpg" class ="pic">
+
+    </div>
+    
+    <script>
+                    document.body.style.backgroundImage = "url('images/anime12.jpg')";
+
+        var b= document.getElementById("banner")
+        c=0
+        var p1= document.getElementById("p1")
+        var p2= document.getElementById("p2")
+        var p3= document.getElementById("p3")
+        var p4= document.getElementById("p4")
+        var p5= document.getElementById("p5")
+        var p6= document.getElementById("p6")
+        var p7= document.getElementById("p7")
+        var p8= document.getElementById("p8")
+        
+        var s
+
+        c=0
+        function show()
+        {
+            switch(c)
+            {
+                    case 1:
+                    p8.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p8.style.opacity="0"
+                    break;
+
+                    case 2:
+                    p7.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p7.style.opacity="0"
+                    break;
+
+                    case 3:
+                    p6.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p6.style.opacity="0"
+                    break;
+
+                    case 4:
+                    p5.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p5.style.opacity="0"
+                    break;
+
+                    case 5:
+                    p4.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p4.style.opacity="0"
+                    break;
+
+                    case 6:
+                    p3.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p3.style.opacity="0"
+                    break;
+
+                    case 7:
+                    p2.style.transform="rotateY(-180deg) rotateX(-180deg)"
+                    p2.style.opacity="0"
+                    break;
+
+                    case 8:
+                  p8.style.opacity = p7.style.opacity = p6.style.opacity = 
+                  p5.style.opacity = p4.style.opacity = p3.style.opacity = 
+                  p2.style.opacity = "1"
+
+                  p8.style.transform=p7.style.transform=p6.style.transform=
+                  p5.style.transform=p4.style.transform=p3.style.transform=
+                  p2.style.transform= "rotateY(180deg) " 
+                    break;
+
+                
+            }
+
+            if(c<=8)
+            {
+                c++
+            }
+            else
+            {
+              c=0
+            }
+            document.title =c
+
+            s = setTimeout("show()",2000)
+
+
+
+        }
+
+
+    </script>
+
+</body>
+</html>
